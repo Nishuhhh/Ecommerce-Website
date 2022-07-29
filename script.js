@@ -1,7 +1,11 @@
-const btn = document.getElementById('btn') ;
-const nav = document.getElementById('nav') ;
+const open = document.getElementById("open");
+const close = document.getElementById("close");
+const container = document.getElementById("container");
 
-btn.addEventListener("click", () =>{
-   nav.classList.toggle("active");
-   btn.classList.toggle("active");
+open.addEventListener("click" , () =>{
+    container.classList.add("active") ;
+});
+
+close.addEventListener("click",() =>{
+    container.classList.remove("active")
 });
